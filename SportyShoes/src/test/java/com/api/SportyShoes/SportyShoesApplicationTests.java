@@ -1,4 +1,4 @@
-package com.SportyShoes.main;
+package com.api.SportyShoes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
