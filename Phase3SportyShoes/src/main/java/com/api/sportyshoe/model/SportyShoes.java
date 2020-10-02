@@ -23,6 +23,13 @@ public class SportyShoes {
 	private String product;
 	private String category;
 	private String date;
+	public SportyShoes(String name, String product, String category, String date) {
+		super();
+		this.name = name;
+		this.product = product;
+		this.category = category;
+		this.date = date;
+	}
 	
 
 }

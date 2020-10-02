@@ -14,4 +14,5 @@ public interface SportyShoesRepository extends JpaRepository<SportyShoes, Intege
 	public List<SportyShoes> findByCategory(String category);
 	public List<SportyShoes> findByName(String CustomerName);
 	public List<SportyShoes> findByProduct(String Product);
+	public List<SportyShoes> findByCategoryAndDate(String Category,String Date);
 }

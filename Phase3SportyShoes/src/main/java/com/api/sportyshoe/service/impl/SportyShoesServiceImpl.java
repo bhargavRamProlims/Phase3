@@ -65,4 +65,10 @@ public class SportyShoesServiceImpl implements SportyShoesService{
 		return repository.findByCategory(Category);
 	}
 
+	@Override
+	public List<SportyShoes> getAllSportyShoesByCategoryAndDate(String Category, String Date) {
+		
+		return repository.findByCategoryAndDate(Category,Date);
+	}
+
 }

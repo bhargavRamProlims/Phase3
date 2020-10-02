@@ -14,5 +14,6 @@ public interface SportyShoesService {
 	public List<SportyShoes> getAllSportyShoesByName(String Name);
 	public List<SportyShoes> getAllSportyShoesByProduct(String Product);
 	public List<SportyShoes> getAllSportyShoesByCategory(String Category);
+	public List<SportyShoes> getAllSportyShoesByCategoryAndDate(String Category,String Date);
 
 }
