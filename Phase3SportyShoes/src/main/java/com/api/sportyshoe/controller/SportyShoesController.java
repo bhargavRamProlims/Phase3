@@ -3,7 +3,6 @@ package com.api.sportyshoe.controller;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +11,6 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.api.sportyshoe.exceptionHandler.SportyShoesException;
 import com.api.sportyshoe.model.SportyShoes;
 import com.api.sportyshoe.service.SportyShoesService;
@@ -26,7 +24,7 @@ public class SportyShoesController {
 	
 	private MultiValueMap<String, String> errorMap;
 	
-
+	
 	@PostConstruct
 	public void repo() {
 		service.createSportyShoes(new SportyShoes("Jim","Nike","Running","10-10-2020"));
