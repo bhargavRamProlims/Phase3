@@ -1,4 +1,4 @@
-package com.api.SportyShoes.model;
+package com.api.sportyshoe.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +8,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
 
 @Entity
 @Table
@@ -20,9 +19,10 @@ public class SportyShoes {
 	@Id
 	@GeneratedValue
 	private int id;
-	private String customerName;
+	private String name;
 	private String product;
 	private String category;
-	private String dateofpurchase;
+	private String date;
+	
 
 }

@@ -1,4 +1,4 @@
-package com.api.SportyShoes.controller;
+package com.api.sportyshoe.controller;
 
 import java.util.List;
 
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.api.SportyShoes.exceptionHandler.SportyShoesException;
-import com.api.SportyShoes.model.SportyShoes;
-import com.api.SportyShoes.service.SportyShoesService;
+import com.api.sportyshoe.exceptionHandler.SportyShoesException;
+import com.api.sportyshoe.model.SportyShoes;
+import com.api.sportyshoe.service.SportyShoesService;
 
 
 @RestController
@@ -26,17 +26,17 @@ public class SportyShoesController {
 	
 	private MultiValueMap<String, String> errorMap;
 	
-	@PostMapping("/SportShoes")
+	@PostMapping("/sportyshoe")
 	public SportyShoes createSportyShoes(@RequestBody SportyShoes sportyShoes) {
 		return service.createSportyShoes(sportyShoes);
 	}
 	
-	@GetMapping("/SportShoes")
+	@GetMapping("/sportyshoe")
 	public List<SportyShoes> getAllSportyShoes(){
 		return service.getAllSportyShoes();
 	}
 	
-	@GetMapping("/SportShoes/{Id}")
+	@GetMapping("/sportyshoe/{Id}")
 	public ResponseEntity<SportyShoes> getSportyShoesById(@PathVariable int Id) {
 		try {
 			return new ResponseEntity<>(service.getSportyShoesById(Id),HttpStatus.OK);
@@ -47,22 +47,22 @@ public class SportyShoesController {
 		}
 	}
 	
-	@GetMapping("/SportShoes/Date/{Date}")
+	@GetMapping("/sportyshoe/Date/{Date}")
 	public List<SportyShoes> getAllSportyShoesByDate(@PathVariable String Date){
 		return service.getAllSportyShoesByDate(Date);
 	}
 	
-	@GetMapping("/SportShoes/Name/{Name}")
+	@GetMapping("/sportyshoe/Name/{Name}")
 	public List<SportyShoes> getAllSportyShoesByName(@PathVariable String Name){
 		return service.getAllSportyShoesByName(Name);
 	}
 	
-	@GetMapping("/SportShoes/Product/{Product}")
+	@GetMapping("/sportyshoe/Product/{Product}")
 	public List<SportyShoes> getAllSportyShoesByEmailId(@PathVariable String Product){
 		return service.getAllSportyShoesByProduct(Product);
 	}
 	
-	@GetMapping("/SportShoes/Category/{Category}")
+	@GetMapping("/sportyshoe/Category/{Category}")
 	public List<SportyShoes> getAllSportyShoesByCategory(@PathVariable String Category){
 		return service.getAllSportyShoesByCategory(Category);
 	}

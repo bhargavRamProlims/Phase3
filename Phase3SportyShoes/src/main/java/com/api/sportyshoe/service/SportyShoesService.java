@@ -1,9 +1,9 @@
-package com.api.SportyShoes.service;
+package com.api.sportyshoe.service;
 
 import java.util.List;
 
-import com.api.SportyShoes.exceptionHandler.SportyShoesException;
-import com.api.SportyShoes.model.SportyShoes;
+import com.api.sportyshoe.exceptionHandler.SportyShoesException;
+import com.api.sportyshoe.model.SportyShoes;
 
 public interface SportyShoesService {
 	

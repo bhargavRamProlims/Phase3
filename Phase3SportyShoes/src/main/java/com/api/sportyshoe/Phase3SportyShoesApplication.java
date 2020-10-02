@@ -1,14 +1,13 @@
-package com.api.SportyShoes;
+package com.api.sportyshoe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SportyShoesApplication {
+public class Phase3SportyShoesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SportyShoesApplication.class, args);
-
+		SpringApplication.run(Phase3SportyShoesApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.api.SportyShoes.exceptionHandler;
+package com.api.sportyshoe.exceptionHandler;
 
 public class SportyShoesException extends Exception {
 

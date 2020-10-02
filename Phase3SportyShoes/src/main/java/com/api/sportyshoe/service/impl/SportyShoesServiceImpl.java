@@ -1,4 +1,4 @@
-package com.api.SportyShoes.service.impl;
+package com.api.sportyshoe.service.impl;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -6,10 +6,10 @@ import java.util.NoSuchElementException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.api.SportyShoes.exceptionHandler.SportyShoesException;
-import com.api.SportyShoes.model.SportyShoes;
-import com.api.SportyShoes.repository.SportyShoesRepository;
-import com.api.SportyShoes.service.SportyShoesService;
+import com.api.sportyshoe.exceptionHandler.SportyShoesException;
+import com.api.sportyshoe.model.SportyShoes;
+import com.api.sportyshoe.repository.SportyShoesRepository;
+import com.api.sportyshoe.service.SportyShoesService;
 
 
 @Service
@@ -18,9 +18,9 @@ public class SportyShoesServiceImpl implements SportyShoesService{
 	@Autowired
 	private SportyShoesRepository repository;
 	
+	
 	@Override
 	public SportyShoes createSportyShoes(SportyShoes sportyShoes) {
-		
 		return repository.save(sportyShoes);
 	}
 
@@ -46,12 +46,12 @@ public class SportyShoesServiceImpl implements SportyShoesService{
 
 	@Override
 	public List<SportyShoes> getAllSportyShoesByDate(String Date) {
-		return repository.findByDateofpurchase(Date);
+		return repository.findByDate(Date);
 	}
 
 	@Override
 	public List<SportyShoes> getAllSportyShoesByName(String Name) {
-		return repository.findByCustomerName(Name);
+		return repository.findByName(Name);
 	}
 
 	@Override
@@ -61,6 +61,7 @@ public class SportyShoesServiceImpl implements SportyShoesService{
 
 	@Override
 	public List<SportyShoes> getAllSportyShoesByCategory(String Category) {
+		
 		return repository.findByCategory(Category);
 	}
 
