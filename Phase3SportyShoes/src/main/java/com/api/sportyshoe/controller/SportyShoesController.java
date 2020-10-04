@@ -75,11 +75,19 @@ public class SportyShoesController {
 		service.createSportyShoes(new SportyShoes("Jim","Nike","Running","10-10-2020"));
 		service.createSportyShoes(new SportyShoes("Jimmy","Adidas","Basket-Ball","11-10-2020"));
 		service.createSportyShoes(new SportyShoes("Sam","Nike","Football","11-10-2020"));
-		service.createSportyShoes(new SportyShoes("John","Adidas","Running","10-10-2020"));
+		service.createSportyShoes(new SportyShoes("John","Adidas","Running","12-10-2020"));
 		service.createSportyShoes(new SportyShoes("Jim","Adidas","Tennis","15-10-2020"));
 		service.createSportyShoes(new SportyShoes("Jimmy","Adidas","Badminton","16-10-2020"));
 		service.createSportyShoes(new SportyShoes("Sam","Adidas","Running","18-10-2020"));
-		service.createSportyShoes(new SportyShoes("John","Adidas","Football","17-10-2020"));
+		service.createSportyShoes(new SportyShoes("John","Adidas","Football","18-10-2020"));
+		service.createSportyShoes(new SportyShoes("Sunny","Nike","Running","18-10-2020"));
+		service.createSportyShoes(new SportyShoes("John","Adidas","Basket-Ball","19-10-2020"));
+		service.createSportyShoes(new SportyShoes("Sam","Adidas","Tennis","19-10-2020"));
+		service.createSportyShoes(new SportyShoes("Tim","Nike","Running","19-10-2020"));
+		service.createSportyShoes(new SportyShoes("Timmy","Adidas","Tennis","20-10-2020"));
+		service.createSportyShoes(new SportyShoes("Timmy","Nike","Badminton","20-10-2020"));
+		service.createSportyShoes(new SportyShoes("Sunny","Adidas","Running","21-10-2020"));
+		service.createSportyShoes(new SportyShoes("Tom","Adidas","Football","21-10-2020"));
 	}
 
 	@GetMapping("/sportyshoe")

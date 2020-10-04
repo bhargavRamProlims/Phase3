@@ -1,0 +1,8 @@
+com.api.sportyshoe
+com.api.sportyshoe.config
+com.api.sportyshoe.controller
+com.api.sportyshoe.exceptionHandler
+com.api.sportyshoe.model
+com.api.sportyshoe.repository
+com.api.sportyshoe.service
+com.api.sportyshoe.service.impl
